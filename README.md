@@ -1,4 +1,4 @@
-'''# DL-DSMA
+# DL-DSMA
 Docs and demo for my Dampened Stochastic Momentum Attenuator
 
 A DSMA system is a lot like a PID in the sense that it's built to dampen movement and resolve oscillation.  
@@ -85,4 +85,3 @@ You may need to download it to run it.
   
   
 ©2026 Dunvillel Productions
-'''
