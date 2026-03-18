@@ -69,6 +69,8 @@ D and V are the two most influential constants to tune.
 
 
 Note: this will not outperform a PID, it is meant to be a close replacement for when you cannot afford a full PID system.
+I have included an HTML that runs a simulation of a DSMA system (the refresh rate for the math is intentionally slowed to better show it in action)
+You may need to download it to run it.
 
 
 
