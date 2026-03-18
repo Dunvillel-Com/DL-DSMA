@@ -29,7 +29,7 @@ Equations:
 error = targetPos - currentPos  
 output = error - (velocity * V)  
 S = S * -1  
-A = (A * L) + (sign(output) * S)  
+A = (A * L) + (sign(error) * S)  
 output = output / (1 + abs(A) * C) * D  
   
   
