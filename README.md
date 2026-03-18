@@ -15,7 +15,7 @@ S (switch): used to keep track of when the system oscillates.
 A (accumulator): natural memory of oscillation.  
   
 Constants:  
-D (dampen): like the P in PID, it's used to dampen the error scale. This is the one you will change the most - good ranges are from 0.5 (small adjustments) to 2.5 (large adjustments).  
+D (drive): like the P in PID, it's used to dampen the error scale. This is the one you will change the most - good ranges are from 0.5 (small adjustments) to 2.5 (large adjustments).  
 L (leakage): this determines how much the system "remembers". It should really never leave 0.9 - though the range is 0.2 to 0.9.  
 C (correction): this determines how aggressively it adjusts for oscillation. This should likely stay at 1 - though the likely range is 0 - 2   
 V (velocity): this is used to determine how much it dampens due to velocity. 0 for no adjustment, and upper values can depend on the rest of the system tuning.  
@@ -64,6 +64,18 @@ If it isn't slowing down enough, bring it up.
 If you have no velocity input or your V is 0, it will not break the rest of the system.  
   
 D and V are the two most influential constants to tune.  
+  
+  
+  
+When should I use it?  
+-If you have very limited resources  
+-If you have to worry about speed  
+-If you can't be bothered to implement a full PID  
+When should you NOT use it?  
+-If oscillation is very slow - it won't pick it up  
+-If you can afford a PID - it will handle it better  
+-If you need very simple control and still can't afford a DSMA - it still takes up resources!  
+  
   
   
 Note: this will not outperform a PID, it is meant to be a close replacement for when you cannot afford a full PID system.  
